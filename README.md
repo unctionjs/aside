@@ -1,17 +1,24 @@
-# @unction/tempLate
+# @unction/aside
+
 
 ![Tests][BADGE_TRAVIS]
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed -> mixed
+> Array<(any => any)> -> any -> any
 
-An example function.
+Use this function to do thing aside of a main pipeline.
 
 ``` javascript
-tempLate(1) // 1
+export default function generateGraph () {
+  return pipe(
+    aside([format, log]),
+    processData
+  )
+}
 ```
 
-[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/aside.svg?maxAge=2592000&style=flat-square
+
 [BADGE_STABILITY]: https://img.shields.io/badge/stability-strong-green.svg?maxAge=2592000&style=flat-square
-[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/aside.svg?maxAge=2592000&style=flat-square
