@@ -2,7 +2,7 @@
 import {test} from "tap"
 import {spy} from "sinon"
 
-import arrayify from "./source"
+import aside from "./source"
 
 test(({equal, end}) => {
   const unction = spy(() => "b")
