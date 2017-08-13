@@ -1,7 +1,7 @@
 {
   "name": "@unction/aside",
   "version": "1.0.4",
-  "description": "Like pipe but the return value is the argument",
+  "description": "Takes a stack of functions, like `pipe()`, but always returns the second argument",
   "keywords": [
     "unction",
     "functional"
@@ -48,6 +48,6 @@
     "sinon": "2.3.4"
   },
   "dependencies": {
-    "ramda": "0.24.1"
+    "@unction/pipe": "*"
   }
 }

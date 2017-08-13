@@ -1,4 +1,4 @@
-/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type, no-magic-numbers */
+/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 import {spy} from "sinon"
 
