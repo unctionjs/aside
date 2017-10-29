@@ -1,6 +1,6 @@
 {
   "name": "@unction/aside",
-  "version": "3.23.0",
+  "version": "3.24.0",
   "description": "Takes a stack of functions, like `pipe()`, but always returns the second argument",
   "keywords": [
     "unction",
