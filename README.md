@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> Array<mixed => mixed> -> mixed -> mixed
+> Array<mixed => mixed> => mixed => mixed
 
 Takes a stack of functions, like `pipe()`, but always returns the second argument.
 
