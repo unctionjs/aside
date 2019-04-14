@@ -1,43 +1,43 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
-import {spy} from "sinon"
+import {test} from "tap";
+import {spy} from "sinon";
 
-import aside from "./index"
+import aside from "./index";
 
 test(({equal, end}) => {
-  const unction = spy(() => "b")
+  const unction = spy(() => "b");
 
-  equal(aside([unction])("a"), "a")
+  equal(aside([unction])("a"), "a");
 
-  end()
-})
+  end();
+});
 
 test(({ok, end}) => {
-  const unction = spy(() => "b")
+  const unction = spy(() => "b");
 
-  aside([unction])("a")
+  aside([unction])("a");
 
-  ok(unction.calledWith("a"))
+  ok(unction.calledWith("a"));
 
-  end()
-})
+  end();
+});
 
 test(({equal, end}) => {
-  const unction = spy(() => "b")
+  const unction = spy(() => "b");
 
-  equal(aside([unction])("a"), "a")
+  equal(aside([unction])("a"), "a");
 
-  end()
-})
+  end();
+});
 
 test(({ok, equal, end}) => {
-  const unctionA = spy(() => "b")
-  const unctionB = spy(() => "c")
+  const unctionA = spy(() => "b");
+  const unctionB = spy(() => "c");
 
-  equal(aside([unctionA, unctionB])("a"), "a")
+  equal(aside([unctionA, unctionB])("a"), "a");
 
-  ok(unctionA.calledWith("a"))
-  ok(unctionB.calledWith("b"))
+  ok(unctionA.calledWith("a"));
+  ok(unctionB.calledWith("b"));
 
-  end()
-})
+  end();
+});
