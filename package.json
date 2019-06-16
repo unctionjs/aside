@@ -52,7 +52,7 @@
     "tap": "12.6.1"
   },
   "dependencies": {
-    "@unction/pipe": "10.5.0"
+    "@unction/pipe": "10.6.0"
   },
   "nyc": {
     "require": [
