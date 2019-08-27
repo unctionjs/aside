@@ -1,8 +1,8 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 import {spy} from "sinon";
 
-import aside from "./index";
+import aside from "./";
 
 test(({equal, end}) => {
   const unction = spy(() => "b");
