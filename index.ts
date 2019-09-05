@@ -1,10 +1,9 @@
 import pipe from "@unction/pipe";
-export default function aside (unctions) {
-  const journey = pipe(unctions);
+import {MapperFunctionType} from "./types";
 
-
-  return function asideUnctions (value) {
-    journey(value);
+export default function aside<A, B> (unctions: Array<MapperFunctionType<A, B>>) {
+  return function asideUnctions (value: A): A {
+    pipe(unctions)(value);
 
     return value;
   };
