@@ -1,7 +1,7 @@
 
 import {spy} from "sinon";
 
-import aside from "./index.ts";
+import aside from "./index";
 
 test(() => {
   const unction = spy(() => "b");
