@@ -3,13 +3,13 @@ import {spy} from "sinon";
 
 import aside from "./index";
 
-test(() => {
+test("works", () => {
   const unction = spy(() => "b");
 
   expect(aside([unction])("a")).toBe("a");
 });
 
-test(() => {
+test("works", () => {
   const unction = spy(() => "b");
 
   aside([unction])("a");
@@ -17,13 +17,13 @@ test(() => {
   expect(unction.calledWith("a")).toBeTruthy();
 });
 
-test(() => {
+test("works", () => {
   const unction = spy(() => "b");
 
   expect(aside([unction])("a")).toBe("a");
 });
 
-test(() => {
+test("works", () => {
   const unctionA = spy(() => "b");
   const unctionB = spy(() => "c");
 
