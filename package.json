@@ -54,7 +54,7 @@
     "typescript": "3.5.1"
   },
   "dependencies": {
-    "@unction/pipe": "10.6.0"
+    "@unction/pipe": "10.8.0"
   },
   "files": [
     "index.ts",
